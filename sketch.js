@@ -116,7 +116,7 @@ function draw(){
       
 
     // if the ghost touches the door, the gamestate will change to end
-    if(invisibleBlockGroup.isTouching(ghost) || ghost.y > 600 || ghost.x > 580 || ghost.x < 5 || ghost.y > 10){
+    if(invisibleBlockGroup.isTouching(ghost) || ghost.y > 600 || ghost.x > 580 || ghost.x < 5 || ghost.y < 10){
       ghost.visible  = false;
       gameState = "end"
     }
